@@ -12,16 +12,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Praktikum7Live">
 
-        <activity android:name=".ui.user.UserActivity">
+        <activity android:name=".ui.jenisbarang.JenisbarangPostActivity"></activity>
+        <activity android:name=".ui.jenisbarang.JenisbarangActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.user.UserActivity" />
+        <activity android:name=".MainActivity" />
 
-        </activity>
+
     </application>
 
 </manifest>

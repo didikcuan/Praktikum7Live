@@ -7,10 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.praktikum7live.model.User
 import com.example.praktikum7live.network.Api
 
-
 import kotlinx.coroutines.launch
-
-
 
 class UserViewModel : ViewModel() {
     private val _response = MutableLiveData<User>()

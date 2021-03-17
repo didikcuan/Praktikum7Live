@@ -7,7 +7,10 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.praktikum7live.databinding.ActivityMainBinding
 import com.example.praktikum7live.ui.user.UserViewModel
 
+
+
 class MainActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityMainBinding
     private val viewModel: UserViewModel by lazy {
         ViewModelProvider(this).get(UserViewModel::class.java)
@@ -23,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         viewModel.response.observe(this, {
             binding.progressBar.visibility = View.INVISIBLE
-            binding.tvMainActivity.text = it.data[1].last_name
+            binding.tvMainActivity.text = it.data[0].first_name
         })
 
     }

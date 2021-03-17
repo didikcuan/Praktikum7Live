@@ -1,14 +1,16 @@
 package com.example.praktikum7live.ui.user
 
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.praktikum7live.databinding.ActivityUserBinding
 import com.example.praktikum7live.model.UserData
 
+
 class UserActivity : AppCompatActivity() {
+
     private lateinit var binding: ActivityUserBinding
     private val list = ArrayList<UserData>()
     private val viewModel: UserViewModel by lazy {
@@ -37,6 +39,4 @@ class UserActivity : AppCompatActivity() {
             binding.rvUsers.adapter = listUserAdapter
         })
     }
-
 }
-
